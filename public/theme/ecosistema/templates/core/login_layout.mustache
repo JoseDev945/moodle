@@ -1,0 +1,47 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template core/login_layout
+
+    theme_ecosistema override: full-screen background with a centred card
+    (brand header + the page's main content) instead of Boost's split screen.
+
+    Context variables required for this template:
+    * output - The core renderer output object (provides main_content, eco_login_logo_url, eco_site_name).
+
+    Example context (json):
+    {
+        "output": {
+            "main_content": "<h1>Login form goes here</h1>",
+            "eco_login_logo_url": "https://moodle.org/logo/moodle-logo.svg",
+            "eco_site_name": "Academy"
+        }
+    }
+}}
+<div id="page-content" class="eco-login min-vh-100">
+    <div id="region-main" class="eco-login-wrap">
+        <div id="region-main-box" class="eco-login-card">
+            <div class="eco-login-brand">
+                <img class="eco-login-logo" src="{{output.eco_login_logo_url}}" alt="{{output.eco_site_name}}">
+                <span class="eco-login-sitename">{{output.eco_site_name}}</span>
+            </div>
+            <div class="login-container eco-login-body">
+                {{{ output.main_content }}}
+            </div>
+        </div>
+    </div>
+</div>
