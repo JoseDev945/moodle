@@ -14,6 +14,7 @@ body {
 
 // Top navigation bar.
 .navbar.fixed-top {
+    // stylelint-disable-next-line declaration-no-important -- overrides a Bootstrap utility/core rule that is !important.
     background-color: $eco-navbar !important;
     border-bottom: 3px solid $eco-accent;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
@@ -26,6 +27,7 @@ body {
     .popover-region .nav-link,
     .navbar-toggler,
     .editmode-switch-form label {
+        // stylelint-disable-next-line declaration-no-important -- overrides a Bootstrap utility/core rule that is !important.
         color: #fff !important;
     }
 
@@ -179,12 +181,29 @@ body {
     background: $eco-brand;
 }
 
-.eco-tile-aula .eco-tile-icon { background: $eco-brand; }
-.eco-tile-biblioteca .eco-tile-icon { background: #e07b24; }
-.eco-tile-simulaciones .eco-tile-icon { background: #2e9f5b; }
-.eco-tile-capacitacion .eco-tile-icon { background: #7b4bc4; }
-.eco-tile-calendario .eco-tile-icon { background: $eco-accent; }
-.eco-tile-comunidad .eco-tile-icon { background: #d04a6b; }
+.eco-tile-aula .eco-tile-icon {
+    background: $eco-brand;
+}
+
+.eco-tile-biblioteca .eco-tile-icon {
+    background: #e07b24;
+}
+
+.eco-tile-simulaciones .eco-tile-icon {
+    background: #2e9f5b;
+}
+
+.eco-tile-capacitacion .eco-tile-icon {
+    background: #7b4bc4;
+}
+
+.eco-tile-calendario .eco-tile-icon {
+    background: $eco-accent;
+}
+
+.eco-tile-comunidad .eco-tile-icon {
+    background: #d04a6b;
+}
 
 .eco-tile-body {
     display: flex;
@@ -373,6 +392,7 @@ html body.pagelayout-login {
     // Footer over the photo: transparent with light text instead of a white block.
     #page-footer {
         border-top: 0;
+        // stylelint-disable-next-line declaration-no-important -- overrides a Bootstrap utility/core rule that is !important.
         background: rgba(10, 12, 15, .7) !important;
         color: rgba(255, 255, 255, .85);
 
@@ -403,18 +423,21 @@ html body.pagelayout-login {
 .btn:focus:not(:focus-visible),
 .btn-icon:focus:not(:focus-visible),
 .navbar-toggler:focus:not(:focus-visible) {
+    // stylelint-disable-next-line declaration-no-important -- overrides a Bootstrap utility/core rule that is !important.
     box-shadow: none !important;
     outline: 0;
 }
 
 .drawer-toggler .btn:focus-visible,
 .btn-icon:focus-visible {
+    // stylelint-disable-next-line declaration-no-important -- overrides a Bootstrap utility/core rule that is !important.
     box-shadow: 0 0 0 .2rem rgba($eco-accent, .6) !important;
 }
 
 // Touch screens have no hover: tooltips opened by a tap never close and pile up over the bar.
 @media (hover: none) {
     .tooltip {
+        // stylelint-disable-next-line declaration-no-important -- overrides a Bootstrap utility/core rule that is !important.
         display: none !important;
     }
 }
@@ -438,10 +461,12 @@ html body.pagelayout-login {
     // keep them on one line so the second row is not cut off by the fixed bar.
     #sticky-footer {
         .sticky-footer-content {
+            // stylelint-disable-next-line declaration-no-important -- overrides a Bootstrap utility/core rule that is !important.
             padding: .5rem .75rem !important;
         }
 
         .fitem {
+            // stylelint-disable-next-line declaration-no-important -- overrides a Bootstrap utility/core rule that is !important.
             margin-bottom: 0 !important;
         }
 
@@ -450,6 +475,7 @@ html body.pagelayout-login {
         }
 
         [data-groupname="buttonar"] .d-flex {
+            // stylelint-disable-next-line declaration-no-important -- overrides a Bootstrap utility/core rule that is !important.
             flex-wrap: nowrap !important;
             gap: .5rem;
 
@@ -474,6 +500,7 @@ html body.pagelayout-login {
 
         .btn {
             width: 100%;
+            // stylelint-disable-next-line declaration-no-important -- overrides a Bootstrap utility/core rule that is !important.
             margin: 0 !important;
             padding: .45rem .8rem;
             font-size: .85rem;
@@ -495,6 +522,7 @@ html body.pagelayout-login {
 // Below 768px stack them: contact list on top (scrollable), conversation underneath.
 @media (max-width: 767.98px) {
     .message-app.main {
+        // stylelint-disable-next-line declaration-no-important -- overrides a Bootstrap utility/core rule that is !important.
         height: auto !important;
         min-height: 0;
 
@@ -513,6 +541,7 @@ html body.pagelayout-login {
                 overflow-y: auto;
 
                 > .border-end {
+                    // stylelint-disable-next-line declaration-no-important -- overrides a Bootstrap utility/core rule that is !important.
                     border-right: 0 !important;
                     border-bottom: 1px solid var(--bs-border-color);
                 }

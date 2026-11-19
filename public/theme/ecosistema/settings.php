@@ -24,6 +24,10 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+// Settings are loaded on every admin tree build, even when this theme is not active
+// (e.g. during a fresh install), so its constants must be loaded explicitly.
+require_once(__DIR__ . '/lib.php');
+
 if ($ADMIN->fulltree) {
     $settings = new theme_boost_admin_settingspage_tabs('themesettingecosistema', get_string('configtitle', 'theme_ecosistema'));
 
